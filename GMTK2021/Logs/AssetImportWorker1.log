@@ -315,3 +315,125 @@ System memory in use after: 108.9 MB.
 Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3130.
 Total: 6.104888 ms (FindLiveObjects: 0.325308 ms CreateObjectMapping: 0.162370 ms MarkObjects: 3.764581 ms  DeleteObjects: 1.851073 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 127.875228 seconds.
+  path: Assets/spin.anim
+  artifactKey: Guid(75b472770ba24bea59dc3d9307376eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/spin.anim using Guid(75b472770ba24bea59dc3d9307376eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3705e4433edc491c3beff08bda5e25af') in 0.018485 seconds
+  Import took 0.026468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.340406 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(92ced9aa327b2144d83950bc64421e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(92ced9aa327b2144d83950bc64421e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203140404a90af90cdac37ba57fc0de0') in 0.001228 seconds
+  Import took 0.008534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.222010 seconds.
+  path: Assets/Animations 1
+  artifactKey: Guid(ea8ca6147b90a800cbf752cfba73d21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations 1 using Guid(ea8ca6147b90a800cbf752cfba73d21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9434a5234c24d47833add5e7c8ef383c') in 0.001461 seconds
+  Import took 0.008044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.186960 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(ea8ca6147b90a800cbf752cfba73d21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(ea8ca6147b90a800cbf752cfba73d21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617742ae883b2f73cd29fd74d326face') in 0.001438 seconds
+  Import took 0.009882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.115120 seconds.
+  path: Assets/Prefabs/Saw(1).prefab
+  artifactKey: Guid(23842eadfe386dbd183f8e21943304ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Saw(1).prefab using Guid(23842eadfe386dbd183f8e21943304ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243e37830650bb7a282721d9ba528522') in 0.321865 seconds
+  Import took 0.326900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.042558 seconds.
+  path: Assets/Prefabs/Saw.prefab
+  artifactKey: Guid(23842eadfe386dbd183f8e21943304ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Saw.prefab using Guid(23842eadfe386dbd183f8e21943304ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0267b4b5fbe798002bed5d707a6dd40') in 0.014407 seconds
+  Import took 0.019617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 288.233460 seconds.
+  path: Assets/Prefabs/Spiky_stick.prefab
+  artifactKey: Guid(90e3501092df6b4c6838a070ad6e7cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Spiky_stick.prefab using Guid(90e3501092df6b4c6838a070ad6e7cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Spiky_stick) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:636)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:602)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:97)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:91)
+UnityEditor.GameObjectInspector:GetPreviewData () (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:623)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:868)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /home/bokken/buildslave/unity/build/Editor/Mono/AssetPreviewUpdater.cs:33)
+
+[/home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs line 37]
+
+The Animator Controller (Spiky_stick) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:591)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:605)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:97)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:91)
+UnityEditor.GameObjectInspector:GetPreviewData () (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:623)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:868)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /home/bokken/buildslave/unity/build/Editor/Mono/AssetPreviewUpdater.cs:33)
+
+[/home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs line 37]
+
+ -> (artifact id: 'f5288b7b44689e06be10d35380065f77') in 0.028197 seconds
+  Import took 0.036547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003754 seconds.
+  path: Assets/Prefabs/Spiky_stick.prefab
+  artifactKey: Guid(90e3501092df6b4c6838a070ad6e7cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Spiky_stick.prefab using Guid(90e3501092df6b4c6838a070ad6e7cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Spiky_stick) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:636)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:602)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:97)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:91)
+UnityEditor.GameObjectInspector:GetPreviewData () (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:623)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:868)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /home/bokken/buildslave/unity/build/Editor/Mono/AssetPreviewUpdater.cs:33)
+
+[/home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs line 37]
+
+The Animator Controller (Spiky_stick) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:591)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorUtility.cs:605)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:97)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:91)
+UnityEditor.GameObjectInspector:GetPreviewData () (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:623)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /home/bokken/buildslave/unity/build/Editor/Mono/Inspector/GameObjectInspector.cs:868)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /home/bokken/buildslave/unity/build/Editor/Mono/AssetPreviewUpdater.cs:33)
+
+[/home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs line 37]
+
+ -> (artifact id: 'f5288b7b44689e06be10d35380065f77') in 0.016988 seconds
+  Import took 0.021998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.106587 seconds.
+  path: Assets/Prefabs/Saw.prefab
+  artifactKey: Guid(23842eadfe386dbd183f8e21943304ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Saw.prefab using Guid(23842eadfe386dbd183f8e21943304ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d416d74059ab40700608ff18dbab9e') in 0.017804 seconds
+  Import took 0.025137 seconds .
+

@@ -23,8 +23,9 @@ public class PlayerController : MonoBehaviour
 	void Update(){
 		if (isScared)
 		{
-			rb.AddRelativeForce(Vector3.forward*speed*50*Time.deltaTime,ForceMode.VelocityChange);
-			Debug.Log(Vector3.forward*speed * Time.deltaTime);
+			//rb.velocity = Vector3.forward * (speed * 5000 * Time.deltaTime);
+			rb.AddRelativeForce(Vector3.forward*(speed*50*Time.deltaTime));
+			Debug.Log(Vector3.forward*(speed * Time.deltaTime));
 		}
 		if(isLeader){
 			Vector3 velocity = Vector3.zero;

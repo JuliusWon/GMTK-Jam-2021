@@ -123,6 +123,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &451545296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1317734962}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.725
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+      propertyPath: m_Name
+      value: blueperson
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+--- !u!4 &451545297 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 137942cbc67a26a8a9d9f55c3fbfc431, type: 3}
+  m_PrefabInstance: {fileID: 451545296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &657818881
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,8 +356,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.6019042, z: 1}
+  m_Center: {x: 0, y: 0.8009521, z: 0}
 --- !u!23 &661828037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -303,7 +365,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661828033}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -355,7 +417,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10, y: 0.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1708441290}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -372,6 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCoward: 0
+  isScared: 0
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -493,6 +557,7 @@ MonoBehaviour:
   isLeader: 0
   isCoward: 0
   ropeLength: 0
+  ropeMidPoint: {fileID: 0}
 --- !u!1 &669171244
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,8 +700,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.6799648, z: 1}
+  m_Center: {x: 0, y: 0.8399824, z: 0}
 --- !u!23 &1317734960
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -644,7 +709,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317734957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -696,7 +761,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 451545297}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -713,6 +779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCoward: 1
+  isScared: 0
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -743,6 +810,68 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 2
+--- !u!1001 &1708441289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 661828039}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.725
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+      propertyPath: m_Name
+      value: yellowperson
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+--- !u!4 &1708441290 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e83d1d9336f70d298971371c2e9f560e, type: 3}
+  m_PrefabInstance: {fileID: 1708441289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1795696910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,6 +1272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCoward: 0
+  isScared: 0
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -1184,6 +1314,7 @@ MonoBehaviour:
   isLeader: 0
   isCoward: 0
   ropeLength: 2
+  ropeMidPoint: {fileID: 0}
 --- !u!195 &1985248305
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1240,6 +1371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCoward: 0
+  isScared: 0
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -1344,6 +1476,7 @@ MonoBehaviour:
   isLeader: 1
   isCoward: 1
   ropeLength: 0
+  ropeMidPoint: {fileID: 0}
 --- !u!1 &2107159912
 GameObject:
   m_ObjectHideFlags: 0

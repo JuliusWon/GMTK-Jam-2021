@@ -12,11 +12,14 @@ public class SimpleRope : MonoBehaviour
 	public bool isCoward;
 	[SerializeField]
 	float ropeLength;
+
+	private LineRenderer linerenderer; 
 	//Private references
 	NavMeshAgent agent;
 	CharacterController controller;
 	void Start()
-    {
+	{
+		linerenderer = GetComponent<LineRenderer>();
 		agent = GetComponent<NavMeshAgent>();
 		controller = GetComponent<CharacterController>(); 
     }
@@ -24,6 +27,8 @@ public class SimpleRope : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+	    linerenderer.SetPosition(0,transform.position);
+	    linerenderer.SetPosition(1,ropeAnchor.position);
 		/* if(!isLeader){ */
 			/* if(isCoward){ */
 				/* transform.LookAt(ropeAnchor.position); */        

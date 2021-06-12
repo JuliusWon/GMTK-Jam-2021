@@ -24,17 +24,17 @@ public class SimpleRope : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(!isLeader){
-			if(isCoward){
-				transform.LookAt(ropeAnchor.position);        
-    			transform.localEulerAngles = new Vector3(0,transform.rotation.y,0);
-				controller.Move(new Vector3(0,0,ropeSpeed));
-			}else{
-				if(Vector3.Distance(ropeAnchor.position, transform.position) < ropeLength){
-					transform.LookAt(ropeAnchor.position);
-					agent.SetDestination(ropeAnchor.position);	
-				}
-			}
-		}
+		/* if(!isLeader){ */
+			/* if(isCoward){ */
+				/* transform.LookAt(ropeAnchor.position); */        
+    			/* transform.localEulerAngles = new Vector3(0,transform.rotation.y,0); */
+				/* controller.Move(new Vector3(0,0,ropeSpeed)); */
+			/* }else{ */
+				/* if(Vector3.Distance(ropeAnchor.position, transform.position) < ropeLength){ */
+					/* transform.LookAt(ropeAnchor.position); */
+					/* agent.SetDestination(ropeAnchor.position); */	
+				/* } */
+			/* } */
+		/* } */
 	}
 }
